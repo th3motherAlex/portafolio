@@ -1,0 +1,68 @@
+public class empleado {
+    
+    public String nombre;
+    public String apellido;
+    public String cargo;
+    public double salario;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    public double getSalario() {
+        return salario;
+    }
+
+    public empleado(String nombre, String apellido, String cargo, double salario) {
+        setNombre(nombre);
+        setApellido(apellido);
+        setCargo(cargo);
+        setSalario(salario);
+        
+    }
+
+    public empleado(){
+
+    }
+
+    public void imprimirEmpleado() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: " + apellido);
+        System.out.println("Cargo: " + cargo);
+        System.out.println("Salario: " + salario);
+    }
+
+    public static void main(String[] args) {
+        empleado empleado1 = new empleado ("Juan", "Perez", "Gerente", 1000.0);
+        empleado empleado2 = new empleado ("Maria", "Lopez", "Secretaria", 500.0);
+        empleado empleado3 = new empleado ("Pedro", "Gomez", "Vendedor", 300.0);
+
+        empleado1.imprimirEmpleado();
+        empleado2.imprimirEmpleado();
+        empleado3.imprimirEmpleado();
+        
+       
+    }
+
+    
+}
